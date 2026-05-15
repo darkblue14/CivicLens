@@ -19,8 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    // PERUBAHAN: Masukkan alamat React Anda di sini (tanpa garis miring di akhir)
-    'allowed_origins' => ['http://localhost:5173'],
+    'allowed_origins' => explode(',', env('CORS_ALLOWED_ORIGINS', 'http://localhost:5173')),
 
     'allowed_origins_patterns' => [],
 
